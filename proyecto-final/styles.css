@@ -24,9 +24,9 @@ body {
 .header-items li a {
     font-size: 14px;
     color: #2a8aba;
-    padding-inline: 6px;
     text-transform: uppercase;
     text-decoration: none;
+    align-items: center;
 }
 .header-items li i {
     padding: 6px;
@@ -38,27 +38,27 @@ body {
 }
 
 .menu {
-    background-color: #2a8aba;
+    background-color: #009ce9;
     height: 60px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .juguetimagic {
     width: 25%;
 }
 .logo-juguetimagic {
-    width: 130px;
+    width: 240px;
     margin-left: 20px;
 }
 
 .menu-items {
     display: flex;
     list-style: none;
-    margin-right: 30px;
     text-transform: uppercase;
+    margin: 0 20px;
 }
 
 .menu-items li {
@@ -71,11 +71,17 @@ body {
     font-size: 16px;
     display: block;
     color: #fff;
+    padding: 0 7px;
 }
 
 .menu-items li:hover{
     background-color: #3bc0f4;
     transition: 0.5s;
+}
+
+.button-buscar {
+    background-color: #fff;
+    border-bottom: #009ce9;
 }
 
 .carousel-inner {
