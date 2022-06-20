@@ -103,28 +103,33 @@ body {
 
 input.src {
     border-radius: 10px;
+    border-block-color: #fff;
     border: none;
     padding: 2px 35px;
 }
 
-.container {
+.main {
     width: 100%;
     margin: 0;
-    padding: 0;
+}
 
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    flex-wrap: wrap;
+    grid-gap: 5px;
+    margin: 10px 0;
 }
 
 .container .item1 {
     height: 30px;
-}
-
-.container .item1 b{
+    text-transform: uppercase;
+    color: #2a8aba;
+    margin-top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    text-transform: uppercase;
-    color: #2a8aba;
 }
 
 .container .item2 {
@@ -136,12 +141,101 @@ input.src {
     width: 100%;
     height: auto;
     display: grid;
-    grid-gap: 10;px
     grid-template-columns: repeat(4, 1fr);
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
+    grid-gap: 50px;
 }
+
+/* Card 1 */
+.container .item3 .card1 img {
+    margin: 15px 0;
+    padding: 10px;
+    width: 70%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.container .item3 .card1 .card-title {
+    color: #009ce9;
+    font-size: 20px;
+}
+
+.container .item3 .card1 .card-text {
+    font-size: 15px;
+    color: #464747;
+}
+
+.container .item3 .card1 .price {
+    font-size: 15px;
+    color: #009ce9;
+}
+
+ /*Card 2 */
+.container .item3 .card2 img {
+    margin: 15px 0;
+    padding: 10px;
+    width: 73%;
+}
+
+.container .item3 .card2 .card-title {
+    color: #009ce9;
+    font-size: 20px;
+}
+
+.container .item3 .card2 .card-text {
+    font-size: 15px;
+    color: #464747;
+}
+
+.container .item3 .card2 .price {
+    font-size: 15px;
+    color: #009ce9;
+}
+
+ /*Card 3 */
+ .container .item3 .card3 img {
+    margin: 15px 0;
+    padding: 10px;
+    width: 120%;
+}
+
+.container .item3 .card3 .card-title {
+    color: #009ce9;
+    font-size: 20px;
+}
+
+.container .item3 .card3 .card-text {
+    font-size: 15px;
+    color: #464747;
+}
+
+.container .item3 .card3 .price {
+    font-size: 15px;
+    color: #009ce9;
+}
+
+ /*Card 4 */
+ .container .item3 .card4 img {
+    margin: 15px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.container .item3 .card4 .card-title {
+    color: #009ce9;
+    font-size: 20px;
+}
+
+.container .item3 .card4 .card-text {
+    font-size: 15px;
+    color: #464747;
+}
+
+.container .item3 .card4 .price {
+    font-size: 15px;
+    color: #009ce9;
+}
+
+
 
 /* Footer */
 
