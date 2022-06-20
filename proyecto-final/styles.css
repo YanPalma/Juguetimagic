@@ -103,36 +103,101 @@ body {
 
 input.src {
     border-radius: 10px;
-    border-block-color: #fff;
     border: none;
     padding: 2px 35px;
 }
 
-.grid-container{
-    display: grid;
+.container {
     width: 100%;
-    grid-template-areas: 'text' 'carousel' 'cards';
+    margin: 0;
+    padding: 0;
+
 }
 
-.item1 {
-    grid-area: text;
+.container .item1 {
     height: 30px;
+}
+
+.container .item1 b{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
     text-transform: uppercase;
     color: #2a8aba;
 }
 
-.item2 {
-    grid-area: carousel;
+.container .item2 {
+    width: 100%;
     height: auto;
 }
 
-.item3 {
-    grid-area: cards;
+.container .item3 {
+    width: 100%;
     height: auto;
-    padding: 15px;
+    display: grid;
+    grid-gap: 10;px
+    grid-template-columns: repeat(4, 1fr);
     display: flex;
-    gap: 10px;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    background-color: #009ce9;
+    padding: 0 10px;
+}
+.footer .group-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+}
+
+.footer .group-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .group-1 .box figure img {
+    width: 200px;
+}
+
+.footer .group-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer .group-1 .box p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer .group-1 .social-media a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 25px;
+    color: #fff;
+    margin-right: 10px;
+    position: relative;
+}
+
+.footer .group-2 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
