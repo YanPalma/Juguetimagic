@@ -330,7 +330,7 @@ ul.show {
     justify-content: center;
     align-items: center;
 }
-
+/*
 @media screen and (max-width: 600px) {
 
     .logo {
@@ -344,36 +344,13 @@ ul.show {
 
 @media screen and (max-widht:600px) {
     .menu {
-        height: 65px;
-    }
-    .btn-menu {
-        display: inline-flex;
-    }
-    .menu-items {
-        position: fixed;
-        width: 100vw;
-        height: calc(100% - 65px);
-        background-color: #009ce9;
-        top: -100vw;
-        text-align: center;
-        transition: all .4s;
-        flex-direction: column;
+    background-color: #009ce9;
+    height: 60px;
+    width: 80%;
+    display:flex;
+    flex-wrap: wrap;
     }
 
-    .menu-items li {
-        margin: 30px 0 0 0;
-        line-height: 30px;
-    }
-    .menu-items li:hover {
-        background: none;
-    }
-    .menu-items li a {
-        font-size: 20px;
-        color:#fff
-    }
-    .menu-items li a:hover {
-        color:#009ce9
-    }
     .logo-juguetimagic {
         font-size: 25px;
         padding-left: 35px;
@@ -384,14 +361,18 @@ ul.show {
     .main {
         width: 90%;
         grid-template-columns: repeat(1, fr);
+        flex-direction: column;
         gap: 20px;
         padding: 30px 0;
     }
+}
+
+@media screen and (max-widht:600px) {
 
     .footer .group-1 {
     width: 90%;
     grid-template-columns: repeat(1, fr);
     gap: 20px;
-    padding: 30px 0;
+    padding: 30px 10px;
     }
-}
+}*/
