@@ -112,15 +112,20 @@ input.src {
     padding: 2px 35px;
 }
 
-/*.btn-menu {
-    margin-left: 30px;
-    color: #fff;
-    display: none;
+@media screen and (min-width: 100%) {
+    .btn-menu {
+        display: none;
+    }
+}
+    .btn-menu {
+        margin-left: 30px;
+        color: #fff;
+        display: none;
 }
 
-ul.show {
-    top: 65px;
-} */
+    ul.show {
+        top: 65px;
+}
 
 /* Main */
 
@@ -138,11 +143,13 @@ ul.show {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    max-width: 100vw;
 }
 
 .grid-container .item2 {
     width: 100%;
     height: auto;
+    max-width: 100vw;
 }
 
 .grid-container .item3 {
@@ -154,6 +161,7 @@ ul.show {
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+    max-width: 100vw;
 }
 
 /* Card 1 */
@@ -337,49 +345,60 @@ ul.show {
     justify-content: center;
     align-items: center;
 }
-/*
-@media screen and (max-width: 750px) {
+
+@media screen and (max-width: 768px) {
 
     .logo {
-        font-size: 30px;
+        font-size: 20px;
         padding-left: 35px;
     }
     .menu-items li a {
-        font-size: 16px;
+        display: none;
     }
-}
 
-@media screen and (max-widht:750px) {
     .menu {
-    background-color: #009ce9;
-    height: 60px;
-    width: 80%;
-    display:flex;
-    flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
     }
 
-    .logo-juguetimagic {
-        font-size: 25px;
-        padding-left: 35px;
-    }
-}
-
-@media screen and (max-widht:750px) {
     .main {
         width: 90%;
-        grid-template-columns: repeat(1, fr);
         flex-direction: column;
         gap: 20px;
-        padding: 30px 0;
+    }
+
+    .footer .group-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, fr);
+        gap: 20px;
+        padding: 30px 10px;
     }
 }
 
-@media screen and (max-widht:750px) {
-
-    .footer .group-1 {
-    width: 90%;
-    grid-template-columns: repeat(1, fr);
-    gap: 20px;
-    padding: 30px 10px;
+@media screen and (max-width: 680px) {
+    .logo {
+        font-size: 20px;
+        padding-left: 35px;
     }
-}*/
+    .menu-items li a {
+        display: none;
+    }
+
+    .menu .actions-search {
+    display: none;
+    }
+
+    .menu {
+    justify-content: center;
+    align-items: center;
+    }
+
+    .grid-container item3 {
+        width: 100%;
+        height: auto;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+}
