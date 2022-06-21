@@ -309,6 +309,13 @@ ul.show {
     text-transform: uppercase;
 }
 
+.footer .group-1 .box h2:hover {
+    background-color: #3bc0f4;
+    color: #fff;
+    transition: 0.5s;
+    padding: 0 7px;
+}
+
 .footer .group-1 .box p {
     color: #fff;
     font-size: 16px;
@@ -331,7 +338,7 @@ ul.show {
     align-items: center;
 }
 /*
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
 
     .logo {
         font-size: 30px;
@@ -342,7 +349,7 @@ ul.show {
     }
 }
 
-@media screen and (max-widht:600px) {
+@media screen and (max-widht:750px) {
     .menu {
     background-color: #009ce9;
     height: 60px;
@@ -357,7 +364,7 @@ ul.show {
     }
 }
 
-@media screen and (max-widht:600px) {
+@media screen and (max-widht:750px) {
     .main {
         width: 90%;
         grid-template-columns: repeat(1, fr);
@@ -367,7 +374,7 @@ ul.show {
     }
 }
 
-@media screen and (max-widht:600px) {
+@media screen and (max-widht:750px) {
 
     .footer .group-1 {
     width: 90%;
