@@ -337,22 +337,13 @@ body {
     margin-left: 222px;
 }
 
-
-/* Brands */
-  
-.container {
+/* Brands  en proceso*/
+/*
+.galeria-brand {
     display: grid;
     grid-auto-columns: 1fr 1fr;
     gap: 10px;
     margin: 10px;
-}
-
-.brands .tittle-brands {
-    display: flex;
-    justify-content: center;
-    color: #0092e9;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }
 
 .container-brands .galeria-brand{
@@ -363,12 +354,21 @@ body {
 .container-brands .card-brand{
     background: #fff;
     padding: 15px;
+    width: 500px;
+    height: 500px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.brands .tittle-brands {
+    display: flex;
+    justify-content: center;
+    color: #0092e9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+} */
 
 /* Promo */
 .container {
