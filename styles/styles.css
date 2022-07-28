@@ -340,70 +340,33 @@ body {
 
 /* Brands */
 
-.list-brands{
-    background: #f2f2f2;
-}
-
-.container-brands h2 {
-    color: #0092e9;
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 20px;
-    width: auto;
-
-}
- 
-.galeria-brand{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
- 
-.imagen-brand{
-    width: 50%;
-    margin-bottom: 10px;
-    object-fit: cover;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .3);
-}
- 
-.imagen-brand > img{
-    width: 50%;
-    height: 100%;
-    display: block;
-}
- 
-.hover-galeria{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    transform: scale(0);
-    background: #55b1e6;
-    transition: transform .5s;
+.brands .tittle-brands {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+    color: #0092e9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-.hover-galeria p {
+}
+    
+.container {
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    gap: 10px;
     margin: 10px;
 }
- 
-.hover-galeria img{
-    width: 50px;
+
+.container-brands .galeria-brand{
+    background: #0092e9;
+    padding: 35px 0;
 }
  
-.hover-galeria p{
-    color: #fff;
-}
- 
-.imagen-brand:hover .hover-galeria{
-    transform: scale(1);
+.container-brands .card-brand{
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Promo */
@@ -454,9 +417,21 @@ body {
     color: #009ce9;
     text-transform: uppercase;
 }
-.slider-body .subtitle {
+.slider-body .subtitle1 {
     font-size: 18px;
     margin: 30px;
+}
+
+.slider-body .subtitle2 {
+    font-size: 15px;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.slider-body .subtitle3 {
+    font-size: 15px;
+    margin: 30px;
+    font-size: 20px;
 }
 
 .slider-review {
@@ -504,11 +479,6 @@ body {
     margin-top: 16px;
     margin: 30px;
     padding-top: 30px;
-}
-
-.subscribe .input {
-    
-
 }
 
 /* Footer */
@@ -628,17 +598,15 @@ body {
 
     /* Main */
 
-    /* Item 1 */
-
-.item1 {
-    background-color: #0092e9;
-    height: 60px;
-    max-width: 100vw;
-}
-.item1 .banner-start {
-    width: 100%;
-    margin-left: 20px;
-}
+    .item4 {
+        background-color: #0092e9;
+        height: 60px;
+        max-width: 100vw;
+    }
+    .item4 .banner-start {
+        width: 100%;
+        margin-left: 20px;
+    }
 
     /* Slider */
 
@@ -646,6 +614,8 @@ body {
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1 fr;
         gap: 1em;
+        margin-bottom: 20px;
+        justify-content: center;
     }
 
     .slider-picture {
@@ -662,6 +632,27 @@ body {
         width: 90%;
         flex-direction: column;
         gap: 20px;
+    }
+
+    /* Subscribe */
+    .form-subscribe {
+        width: 100%;
+        height: 300px;
+        background: #000428;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        display: grid;
+        grid-template-rows: auto auto  auto;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        margin-top: 200px;
+    }
+
+    .subscribe  {
+        color: #fff;
+        margin: 30px;
+        padding-top: 30px;
     }
 
     /* Footer */
@@ -725,29 +716,3 @@ body {
 
     }
     
-
-
-   /* {
-        .nav-label {
-        display: block;
-        cursor: pointer;
-    }
-    .nav-menu {
-        position: fixed;
-        top: 80px;
-        bottom: 0;
-        background: #3bc0f4;
-        width: 100%;
-        left: 0;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        clip-path: circle(0 at center);
-        transition: clip-path 1s ease-in-out;
-    }
-
-    .nav-input:checked + .nav-menu {
-        clip-path: circle(100% at center);
-    }
-}
