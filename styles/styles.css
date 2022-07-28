@@ -339,6 +339,13 @@ body {
 
 
 /* Brands */
+  
+.container {
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+}
 
 .brands .tittle-brands {
     display: flex;
@@ -346,13 +353,6 @@ body {
     color: #0092e9;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-}
-    
-.container {
-    display: grid;
-    grid-auto-columns: 1fr 1fr;
-    gap: 10px;
-    margin: 10px;
 }
 
 .container-brands .galeria-brand{
@@ -368,6 +368,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 
 /* Promo */
 .container {
